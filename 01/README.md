@@ -18,10 +18,11 @@ Markup languages are used to describe the structure and content of a document, w
 The basic layout of a webpage using `<html>`, `<head>`, and `<body>` tags.
 
 ```html
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
 <head>
     <title>My First Page</title>
+    <input type="text"/>
 </head>
 <body>
     <h1>Hello World</h1>
