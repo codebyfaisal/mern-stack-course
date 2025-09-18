@@ -15,11 +15,11 @@
 
 # Introduction to Web Development
 ## Week 1: Web Development Fundamentals
-- [ ] Introduction to Web Development
-- [ ] How the web works (client/server, HTTP, browser)
-- [ ] Frontend vs Backend
-- [ ] HTML Basics (tags, attributes, structure)
-- [ ] Semantic HTML & Forms
+- [ ] Introduction to Web Development  - 9/9/2025
+- [ ] How the web works (client/server, HTTP, browser) - 9/10/2025
+- [ ] Frontend vs Backend - 9/11/2025
+- [ ] HTML Basics (tags, attributes, structure) - 9/12/2025
+- [ ] Semantic HTML & Forms - 9/13/2025
 ---
 
 # Frontend Development
