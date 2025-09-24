@@ -1,5 +1,5 @@
 # HTML Forms
-
+Form, a powerful tool to collect information from users(name, email, message, etc.)
 Forms are used when you want to collect information from users, like their name, email, or message. Forms in HTML are made with the `<form>` tag.
 
 Here’s how you start:
