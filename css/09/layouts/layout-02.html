@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layout Option 3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: #e6ffe6;
+      }
+
+      header {
+        background-color: #006400;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #ccffcc;
+        padding: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+      }
+
+      nav a {
+        color: #006400;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      aside {
+        background-color: #99ff99;
+        padding: 15px;
+        border-bottom: 1px solid #4caf50;
+      }
+
+      main {
+        flex: 1;
+        padding: 20px;
+      }
+
+      footer {
+        background-color: #006400;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to IT Artificer Software House</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="layout-01.html">Layout Option 1</a></li>
+        <li><a href="layout-02.html">Layout Option 2</a></li>
+        <li><a href="layout-03.html">Layout Option 3</a></li>
+        <li><a href="../index.html">View Without CSS</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside>
+        <h4>Sidebar Navigation</h4>
+        <p>Use this space for extra links or information.</p>
+        <ul>
+          <li><a href="#">Sidebar Link 1</a></li>
+          <li><a href="#">Sidebar Link 2</a></li>
+          <li><a href="#">Sidebar Link 3</a></li>
+        </ul>
+      </aside>
+
+      <main>
+        <p>Explore the available layout styles using the menu above.</p>
+
+        <h2>Switch Between Styles on the Same Page</h2>
+        <p>
+          Here's a quick demo showing how applying different CSS stylesheets can
+          completely transform the look of a webpage.
+        </p>
+
+        <h3>Plain View (No Styles Applied)</h3>
+        <p>
+          This version displays the page structure using only HTML with no
+          styles applied.
+        </p>
+
+        <h4>Main Content Area</h4>
+        <p>
+          The main content area complements the sidebar by displaying the bulk
+          of the information.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+        </p>
+      </main>
+    </div>
+
+    <footer>
+      <p>© 2025 IT Artificer Software House</p>
+    </footer>
+  </body>
+</html>
