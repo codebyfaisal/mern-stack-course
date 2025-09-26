@@ -1,0 +1,37 @@
+/* * Type Selector */
+/* p {
+    color: red;
+    background-color: green;
+}
+
+h1 {
+    background: gray;
+    color: white;
+} */
+
+/* * Universal Selector */
+/* * {
+  color: red;
+  background-color: green;
+} */
+
+/* * Class Selector */
+/* .myclass, ul {
+  color: red;
+}
+
+.meraclass {
+    background-color: grey;
+} */
+
+/* * ID Selector */
+/* #first {
+  color: red;
+} */
+
+/* #firstid,
+section,
+ul,
+.myclass {
+  color: red;
+} */
