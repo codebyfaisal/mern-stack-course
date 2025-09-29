@@ -35,3 +35,54 @@ ul,
 .myclass {
   color: red;
 } */
+
+/* * Attribute Selector */
+/* input[type="text"],
+input[type="text"],
+h1 {
+  color: red;
+} */
+
+/* * Pseudo Selector */
+/* h2:hover, 
+h1:hover {
+  color: red;
+} */
+
+/* * Pseudo Class */
+/* p:last-child {
+  color: red;
+} */
+
+/* * Pseudo Element */
+/* p::first-letter {
+  font-size: 80px;
+} */
+/* 
+p:nth-child(1) {
+  color: red;
+} */
+
+/* * Descendant Selector/ Combinator */
+/* .card h3 { 
+  color: green;
+} */
+
+/* .card .sub-div .sublimentary-div ul{
+  color: red;
+} */
+
+/* * Child combinator selector */
+/* body > p {
+  color: red;
+} */
+
+/* * Adjacent Sibling Combinator */
+/* h1 + p {
+  color: red;
+} */
+
+/* * General Sibling Combinator */
+/* h1 ~ p {
+  color: red;
+} */

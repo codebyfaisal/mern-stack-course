@@ -1,28 +1,73 @@
 # What is CSS?
 
-CSS is a style sheet language used for styling or presenting the document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).
+CSS (Cascading Style Sheets) is a **style sheet language** used to describe the **presentation** (look and formatting) of a document written in a markup language like **HTML** or **XML** (including XML-based languages like **SVG**, **MathML**, or **XHTML**).
+
+It allows developers to control the layout, colors, fonts, spacing, and many other aspects of how elements appear on a web page.
+
+---
 
 ## CSS Syntax
 
+A basic CSS rule (also called a "rule set") looks like this:
+
 ```css
 selector {
-    property: value;    
+  property: value;
 }
 ```
 
-```
+Example:
+
+```css
 p {
-    color: red;
+  color: red;
 }
 ```
-> selector - the element that you want to style
-> property - the property of the element that you want to style or property name
-> value - the value of the property that you want apply on the element
->
 
-## How to use CSS
+### CSS Rule Components:
 
-There are 3 ways to use CSS:
-- Inline - 
-- Internal -
-- External 
+* **Selector**: Specifies which HTML element(s) the rule applies to (`p` in the example).
+* **Property**: The aspect of the element you want to change (`color`).
+* **Value**: The setting for that property (`red`).
+
+---
+
+## How to Use CSS
+
+There are three main ways to apply CSS to HTML:
+
+1. **Inline CSS**
+
+   * Added directly to an HTML element using the `style` attribute.
+   * Example:
+
+     ```html
+     <p style="color: blue;">This is a blue paragraph.</p>
+     ```
+
+2. **Internal CSS**
+
+   * Written inside a `<style>` tag within the `<head>` section of the HTML document.
+   * Example:
+
+     ```html
+     <head>
+       <style>
+         p {
+           font-size: 18px;
+         }
+       </style>
+     </head>
+     ```
+
+3. **External CSS**
+
+   * Written in a separate `.css` file and linked to the HTML document using a `<link>` tag in the `<head>`.
+   * Example:
+
+     ```html
+     <head>
+       <link rel="stylesheet" href="styles.css">
+     </head>
+     ```
+---
