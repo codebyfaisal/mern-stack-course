@@ -1,0 +1,31 @@
+/* background: [background-color] [background-image] [background-repeat] [background-attachment] [background-position]; */
+
+h1 {
+  /* color: red; */
+  /* color: #11ff00; */
+  /* color: hsl(120, 100%, 20%); */
+  /* color: rgb(23, 255, 245); */
+  /* color: rgba(23, 255, 245,0.1); */
+  /* color: hsla(10, 100%, 20%, 1); */
+  /* color: cmyk(13, 0, 88, 0.73); */
+  /* color: hwb(10 100% 90%); */
+}
+
+h1 {
+  /* background-color: #1fe453; */
+  /* background-image: url("./img/slava.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+
+  /* background: #1fe453 url("./img/slava.jpg") no-repeat center; */
+
+  /* background-size: cover; */
+
+  /* height: 300px; */
+  /* width: 300px;  */
+}
+
+body {
+  background: #1fe453 url("./img/slava.jpg") no-repeat  center/cover;
+}
