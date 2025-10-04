@@ -71,3 +71,26 @@ There are three main ways to apply CSS to HTML:
      </head>
      ```
 ---
+
+## CSS Shorthand Properties
+CSS provides a shorthand way to set multiple properties at once. Multiple properties on one line means multiple properties.
+
+Example:
+> Single line Property 
+```css
+p {
+  background-color: red;
+  background-image: url('image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+```
+
+> Above example in short form or as a shorthand property
+```css
+p {
+  background: red url('image.jpg') no-repeat center;
+}
+```
+
+---

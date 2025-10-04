@@ -1,0 +1,51 @@
+i {
+  font-size: 30px;
+  margin: 10px;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+ul {
+  list-style-type: symbols("✓");
+  list-style-position: outside;
+  list-style-image: url("./search-icon.jpg");
+}
+
+div {
+  position: relative;
+
+  & input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  & i {
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: transparent;
+    width: 1rem;
+    height: 1rem;
+  }
+}

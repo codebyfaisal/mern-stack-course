@@ -1,0 +1,104 @@
+/* * CSS width & height */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+/* max-content */
+/* min-content */
+
+.box2 {
+  width: max-content;
+  /* width: min-content; */
+  height: 100px;
+  background-color: green;
+}
+
+/* max-width */
+/* min-width */
+.box3 {
+  min-width: 100px;
+  /* max-width: 100px; */
+  height: 100px;
+  background-color: blue;
+}
+
+/* * CSS Font/Text */
+
+html {
+  /* font-size: 90%; */
+}
+
+body {
+  font-size: 80%;
+}
+
+p {
+  /* font-size: 16px; */
+
+  font-family: cursive, "Bernar MT", Aial, Helvetic, sans-serif;
+
+  /* font-weight: 100; */
+  /* 100 200 300 400 500 600 700 800 900 */
+
+  /* font-weight: bolder; */
+  /* lighter normal bold bolder */
+
+  /* font-style: italic; */
+  /* italic oblique */
+
+  /* font-variant: small-caps; */
+  /* normal small-caps */
+
+  /* font-size: 10%; */
+  /* px rem em % */
+
+  /* line-height: 2; */
+
+  /* letter-spacing: 1rem; */
+
+  /* word-spacing: 2px; */
+
+  /* text-align: start; */
+  /* right center justify start end */
+
+  /* text-decoration: underline solid 5px green; */
+  /* underline overline line-through */
+
+  /* text-transform: none; */
+  /* none uppercase lowercase capitalize */
+
+  /* text-align-last: right; */
+  /* right center justify start end */
+
+  /* text-indent: 20px; */
+
+  /* vertical-align: bottom; */
+  /* middle bottom */
+
+  /* direction: rtl; */
+  /* unicode-bidi: bidi-override; */
+
+  /* white-space: nowrap; */
+  /* nowrap pre pre-wrap pre-line */
+
+  /* text-shadow: 2px 2px 4px green; */
+  /* text-shadow: x-axis y-axis blur-radius color; */
+
+  /* text-shadow: 2px 2px 1px red, 4px 4px 2px blue, 6px 6px 3px green,
+    8px 8px 1px yellow; */
+}
+
+a {
+  /* text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+  text-decoration-color: green; */
+
+  /* shorthand */
+  text-decoration: underline solid 5px green;
+}
