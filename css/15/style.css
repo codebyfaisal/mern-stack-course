@@ -1,0 +1,33 @@
+/* .tableover {
+  overflow-x: auto;
+  width: 1000px;
+} */
+table {
+  border-collapse: collapse;
+  /* width:600px; */
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid lightblue;
+}
+
+th {
+  border-right: 1px solid white;
+  background-color: lightblue;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* .block h1 {
+  display: inline;
+  padding: 30px;
+}
+
+.block i {
+  display: inline;
+} */

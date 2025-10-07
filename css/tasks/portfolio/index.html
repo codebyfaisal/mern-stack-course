@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe - Full Stack Developer Portfolio</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        /* Background: Soft, light gray for a clean look */
+        background-color: #f7f9fb;
+        /* Text: Dark, readable gray */
+        color: #2c3e50;
+      }
+
+      header {
+        /* Primary Brand Color: Deep Teal/Cyan */
+        background-color: #16a085;
+        color: white;
+        padding: 30px;
+        text-align: center;
+      }
+
+      h1 {
+        color: #ffffff;
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+      }
+
+      nav {
+        /* Darker shade of the primary color for contrast */
+        background-color: #138d75;
+        padding: 12px 0;
+        text-align: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 15px;
+      }
+
+      nav a:hover {
+        /* Accent/Hover Color: Bright, contrasting orange/yellow */
+        color: #f39c12;
+      }
+
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .content-box {
+        /* Content Background: Pure white for readability */
+        background-color: white;
+        /* Border: Soft, subtle gray */
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      #summary {
+        text-align: left;
+      }
+
+      .profile-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        /* Border color matches primary brand color */
+        border: 4px solid #16a085;
+        margin-right: 20px;
+      }
+
+      blockquote {
+        font-style: italic;
+        /* Quote bar matches primary brand color */
+        border-left: 5px solid #16a085;
+        padding-left: 15px;
+        margin: 15px 0;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .skill-item {
+        /* Skill tag background: Subtle light gray */
+        background-color: #ecf0f1;
+        padding: 8px 12px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+      }
+
+      .contact-input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        /* Input border: Soft gray */
+        border: 1px solid #bdc3c7;
+        border-radius: 4px;
+      }
+
+      #contact-form button {
+        /* Button: Primary Brand Color */
+        background-color: #16a085;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      #contact-form button:hover {
+        /* Button Hover: Darker shade of primary color */
+        background-color: #138d75;
+      }
+
+      footer {
+        /* Footer Background: Very dark gray for strong contrast */
+        background-color: #34495e;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      footer a {
+        /* Footer Link: Accent color */
+        color: #f39c12;
+      }
+
+      footer .copyright {
+        /* Copyright text: Lighter gray for hierarchy */
+        color: #bdc3c7;
+        font-size: 0.8em;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="top-heading">John Doe</h1>
+
+      <p>Full Stack Web Developer | MERN - PERN Stack Enthusiast</p>
+    </header>
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#skills">Tech Stack</a>
+      <a href="#contact-form">Contact</a>
+    </nav>
+
+    <main>
+      <section id="summary" class="content-box">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThAP50lZCqM5qBkH2G37_1r4pVn4HJOM5EGg&s"
+          alt="Profile of John Doe"
+          class="profile-img"
+        />
+
+        <h2>About Me</h2>
+
+        <blockquote>
+          "Creative and detail-oriented developer skilled in modern JavaScript
+          frameworks and CMS tools. Enjoys solving problems and building
+          scalable, responsive applications." <br /><br />
+          <strong>Education:</strong> BSc in Information Technology (2021–25)
+          from Example University.
+        </blockquote>
+      </section>
+
+      <section id="skills" class="content-box">
+        <h2>Tech Stack & Expertise</h2>
+
+        <ul>
+          <li class="skill-item">
+            Languages: <strong>HTML</strong>, <strong>CSS</strong>, JavaScript,
+            TypeScript
+          </li>
+
+          <li class="skill-item">Frameworks: React.js, Node.js, Express.js</li>
+
+          <li class="skill-item">Databases: PostgreSQL, MongoDB, Prisma</li>
+
+          <li class="skill-item">Tools: GitHub, Netlify, Vercel</li>
+
+          <li class="skill-item">Key Skill: Responsive Design & UI/UX</li>
+        </ul>
+      </section>
+
+      <section id="contact-form" class="content-box">
+        <h2>Get in Touch</h2>
+
+        <form>
+          <input type="text" placeholder="Your Name" class="contact-input" />
+
+          <input type="email" placeholder="Your Email" class="contact-input" />
+          <textarea rows="4" placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Contact Email:
+        <a href="mailto:hello@example.com">hello@example.com</a>
+      </p>
+
+      <p class="copyright">
+        &copy; 2025 John Doe. Developer based in Cityville, Countryland.
+      </p>
+    </footer>
+  </body>
+</html>
+
+<section class="pic">
+  <img src="" alt="" />
+</section>

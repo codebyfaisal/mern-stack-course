@@ -24,8 +24,8 @@ a:active {
 }
 
 ul {
-  list-style-type: symbols("✓");
-  list-style-position: outside;
+  list-style-type: square;
+  list-style-position: inside;
   list-style-image: url("./search-icon.jpg");
 }
 
