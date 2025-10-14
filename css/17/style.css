@@ -1,0 +1,15 @@
+.box {
+  width: calc(50% - 70px);
+  height: 100px;
+  background-color: lightcoral;
+  margin: 0 20px;
+  padding: 20px;
+}
+
+.box1 {
+  float: right;
+}
+
+/* .box2 {
+  background-color: green;
+} */

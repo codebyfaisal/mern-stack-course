@@ -1,0 +1,103 @@
+/* Change background color to lightsalmon on screens */
+
+body {
+  color: white;
+  background-color: green;
+}
+
+/* @media screen {
+  body {
+    background-color: lightsalmon;
+  }
+} */
+
+/* Change background color to lightsalmon when width is exactly 600px */
+/* @media (width: 600px) {
+    body {
+        background-color: lightsalmon;
+    }
+} */
+
+/* Change background color to lightsalmon when screen width is exactly 600px */
+/* @media screen and (width: 600px) {
+    body {
+        background-color: lightsalmon;
+    }
+} */
+
+/* Change background color to lightsalmon when screen width is at least 600px */
+/* @media screen and (min-width: 600px) {
+    body {
+        background-color: blueviolet;
+    }
+} */
+
+/* Change background color to lightsalmon when screen width is at most 600px */
+/* @media screen and (max-width: 600px) {
+    body {
+        background-color: lightsalmon;
+    }
+} */
+
+/* 
+-- landscape
+| portrait 
+*/
+
+/* Change background color to lightsalmon when screen is in landscape orientation */
+/* @media screen and (orientation: landscape) {
+    body {
+        background-color: lightsalmon;
+    }
+} */
+
+/* Change background color to lightsalmon when screen is in portrait orientation */
+/* @media screen and (orientation: portrait) {
+    body {
+        background-color: lightsalmon;
+    }
+} */
+
+/* Change background color to lightsalmon when screen is NOT in landscape orientation */
+/* @media not all and (orientation: landscape) {
+    body {
+        background-color: lightsalmon;
+    }
+} */
+
+/* Change background color to lightsalmon when max-width is 600px AND orientation is landscape */
+/* @media screen and (max-width: 600px) and (orientation: landscape) {
+    body {
+        background-color: lightsalmon;
+    }
+} */
+
+/* Change background color to lightsalmon when max-width is 600px OR orientation is landscape */
+/* @media screen and (max-width: 600px),
+ screen and (orientation: landscape) {
+    body {
+        background-color: lightsalmon;
+    }
+} */
+
+/* Change background color to lightsalmon when width is between 700px and 1000px */
+/* @media all and (min-width: 700px) and (max-width: 1000px) {
+    body {
+        background-color: lightsalmon;
+    }
+} */
+
+/* Change background color to lightsalmon when width is between 520px and 700px OR greater than 1000px */
+/* @media all and (min-width: 520px) and (max-width: 700px),
+       all and (min-width: 1000px) {
+    body {
+        background-color: lightsalmon;
+    } 
+} */
+
+/* Change background color to lightsalmon when width is less than 600px */
+/* @media screen and (width < 600px) {
+  body {
+    background-color: lightsalmon;
+  }
+} */
