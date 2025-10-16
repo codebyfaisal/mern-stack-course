@@ -5,6 +5,18 @@ body {
   background-color: green;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+u {
+  font-size: 1.1rem;
+}
+
 /* @media screen {
   body {
     background-color: lightsalmon;
@@ -101,3 +113,21 @@ body {
     background-color: lightsalmon;
   }
 } */
+
+@media screen and (width <= 600px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (width > 600px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (width >= 1000px) {
+  html {
+    font-size: 100%;
+  }
+}
