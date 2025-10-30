@@ -1,0 +1,28 @@
+header a {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: var(--color-primary);
+}
+
+header .btn-login {
+  background-color: var(--color-primary);
+  padding: 0.5rem 1rem;
+}
+
+header .btn-login a {
+  color: white;
+  font-weight: bold;
+}
+
+header .btn-login:hover {
+  background-color: transparent;
+  box-shadow: 0 0 2px 0 var(--color-primary);
+}
+
+header .btn-login:hover a {
+  color: var(--color-primary);
+}

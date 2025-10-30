@@ -1,0 +1,13 @@
+section#hero {
+  min-height: 70vh;
+  /* background-color: var(--color-primary); */
+  /* background: linear-gradient(to right, #004080 50%, var(--color-primary) 50%); */
+  background-image: radial-gradient(circle at bottom left, blue, pink);
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+section#hero h1 {
+  font-size: 3rem;
+}
