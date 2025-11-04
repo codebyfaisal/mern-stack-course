@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        /* columns: 5; */
+        columns: 6;
+      }
+
+      .box {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 10px 0;
+      }
+
+      .placeholder {
+        width: 100%;
+        height: 100%;
+        background-color: lightgray;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        z-index: -1;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        z-index: 2;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+      }
+
+      .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+      }
+
+      .box:hover .overlay {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.5)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/188/239/157" />
+      </div> -->
+    <div class="wrapper">
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/188/239/157" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/166/213/190" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/151/227/193" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/189/192/196" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/188/153/176" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/160/206/183" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/164/218/155" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/177/281/170" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/172/283/155" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/151/227/153" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/179/292/177" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/166/261/194" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/168/294/161" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/182/253/164" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/158/276/176" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/152/292/176" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/177/184/177" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/173/180/199" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/178/281/193" />
+      </div>
+      <div class="box">
+        <div class="placeholder">No Image</div>
+        <div class="overlay"></div>
+        <img src="https://picsum.photos/id/165/281/197" />
+      </div>
+    </div>
+  </body>
+</html>
