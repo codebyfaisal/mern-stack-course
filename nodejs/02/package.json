@@ -1,0 +1,13 @@
+{
+  "name": "02",
+  "version": "1.0.0",
+  "description": "Working on internet we need to use protocols like HTTP, HTTPS, FTP, SMTP, etc.\r It comes by default in your laptop or computer OS's which can be used by installed browsers and other software.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  }
+}
