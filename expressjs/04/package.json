@@ -1,0 +1,17 @@
+{
+  "name": "04",
+  "version": "1.0.0",
+  "description": "Express js is a node js framework which is used to build web applications.\r Express js is also a npm package which can be installed using \r ```powershell\r npm install express\r ```\r Express js is responsible for receiving requests from the client and sending responses to the client.\r Express js that creates routes and handles HTTP requests and responses.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

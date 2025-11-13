@@ -17,6 +17,10 @@ server.listen(3000)
 
 # HTTP Request Structure
 ## URL
+Uniform Resource Locator
+
+in server side we need to get url from request object mean from client via incoming request
+
 'https://example.com?username=slava&password=123'
 'https://example.com/users?username=slava&password=123'
 

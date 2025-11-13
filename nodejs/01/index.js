@@ -2,7 +2,7 @@ const fs = require('fs');
 
 // fs.functioname(path, data, callback)
 
-// fs.writeFile('./test.txt', '345746463434dsdfer', (err) => {
+// fs.writeFile('./test.txt', 'Hello class app keso ho', (err) => {
 //     if (err) throw err;
 //     console.log('The file has been saved!');
 // })
@@ -10,7 +10,7 @@ const fs = require('fs');
 // fs.readFile('./test.txt', 'utf8', (err, data) => {
 //     if (err) throw err;
 //     console.log(data);
-//  })
+// })
 
 // fs.appendFile('./test.txt', '345746463434dsdfer\n', (err) => {
 //     if (err) throw err;
@@ -46,7 +46,12 @@ const fs = require('fs');
 //     console.log('The directory has been created!');
 // })
 
-// fs.rmdir('./test1', { recursive: true }, (err) => {
+// fs.rmdir('./test1', (err) => {
+//     if (err) throw err;
+//     console.log('The directory has been created!');
+// })
+
+// fs.rmdir('./test.txt', { recursive: true }, (err) => {
 //     if (err) throw err;
 //     console.log('The directory has been created!');
 // })
