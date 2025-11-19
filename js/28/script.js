@@ -13,11 +13,40 @@
 // ab = true;
 // ab = true;
 
-// // js data types
-// // number
-// // string
-// // boolean
-// // null
-// // undefined
+// js data types
+// number
+// string
+// boolean
+// null
+// undefined
 
-let a = 45;
+let a = "sss";
+
+console.log(isNaN(a));
+
+let b = '34ss' * 34
+
+
+console.log(typeof null)
+
+// console.log(b)
+
+// let a1 = 234
+// let a2 = 234
+
+// console.log(a1 === a2)
+
+
+// let a1 = Symbol(1234)
+// let a2 = Symbol(1234)
+
+// console.log(a1, a2)
+
+let obj = {
+    first_name: "samad",
+    age: 23,
+    male: true
+}
+
+console.log(obj['name'])
+console.log(obj['first name'])
