@@ -45,7 +45,7 @@
 
 ### **3. prompt() + Loops + Conditionals**
 
-11. Get the number from the user using `prompt()` and print the number **until** they enter a number greater than 10.
+11. Get the number from the user using `prompt()` and print the number **until** 10.
 
 12. Get a password from the user using `prompt()`. if the password is correct → print "`Welcome`" else → print "`Wrong password`".
 

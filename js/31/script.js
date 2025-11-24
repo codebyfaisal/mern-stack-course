@@ -49,3 +49,48 @@
 // for (let key in obj) {
 //     console.log(obj[key])
 // }
+
+
+// For of loop - use when you want to loop through the values of an array //
+
+const arr = [1, 2, 3, 4, 5]
+
+for (let value of arr) {
+    console.log(value)
+}
+
+let str = "Hello";
+
+let obj = {
+    name: "Samsung S22 Ultra",
+    price: 144999,
+    brand: "Samsung",
+    color: "Phantom Black",
+    storage: "16GB RAM + 512GB ROM",
+    display: "6.8 inches, Dynamic AMOLED, 120Hz refresh rate",
+    camera: "50MP primary camera + 12MP front camera",
+    battery: "5000mAh, Fast charging supported",
+    operatingSystem: "Android 12",
+    weight: "229g",
+    dimensions: "163.3 x 78.1 x 8.9 mm",
+    warranty: "1 year",
+    description: "Samsung S22 Ultra is a high-end smartphone that offers a range of features such as a powerful processor, high-quality display, long-lasting battery, and advanced camera capabilities.",
+}
+
+// for (let i = 0; i < 5 ; i++) {
+//     if (i == 2) {
+//         // break;
+//         continue
+//     }
+//     console.log(str[i])
+// }
+
+// console.log(obj)
+
+for (let i in obj) {
+    console.log(obj[i])
+}
+
+for (let i of str) {
+    console.log(i)
+}
