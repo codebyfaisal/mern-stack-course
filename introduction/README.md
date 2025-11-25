@@ -6,24 +6,17 @@
 
 ---
 
-## Plan
-- 3 Months
-- Week 
-  - 5 days per week
-  - mon to friday
----
-
 # Introduction to Web Development
-## Week 1: Web Development Fundamentals
-- [ ] Introduction to Web Development  - 9/9/2025
-- [ ] How the web works (client/server, HTTP, browser) - 9/10/2025
-- [ ] Frontend vs Backend - 9/11/2025
-- [ ] HTML Basics (tags, attributes, structure) - 9/12/2025
-- [ ] Semantic HTML & Forms - 9/13/2025
+## Web Development Fundamentals
+- [ ] Introduction to Web Development
+- [ ] How the web works (client/server, HTTP, browser)
+- [ ] Frontend vs Backend
+- [ ] HTML Basics (tags, attributes, structure)
+- [ ] Semantic HTML & Forms
 ---
 
 # Frontend Development
-## Week 2: HTML + CSS
+## HTML + CSS
 - [ ] Advanced HTML (Forms, Inputs)
 - [ ] CSS Basics (selectors, properties, units)
 - [ ] CSS Box Model & Positioning
@@ -31,7 +24,7 @@
 - [ ] Mini Project: Responsive Web Page
 ---
 
-## Week 3: JavaScript Essentials
+## JavaScript Essentials
 - [ ] JS Syntax, Variables, Data Types
 - [ ] Functions, Arrays, Loops, Objects
 - [ ] DOM Manipulation
@@ -39,7 +32,7 @@
 - [ ] Simple Form Validation
 ---
 
-## Week 4: Advanced JS + Git + UI Frameworks
+## Advanced JS + Git + UI Frameworks
 - [ ] ES6: let/const, arrow functions, destructuring
 - [ ] Fetch API for HTTP requests
 - [ ] Intro to Git & GitHub
@@ -47,7 +40,7 @@
 - [ ] Mini Project: Styled interactive page
 ---
 
-## Week 5: React Basics
+## React Basics
 - [ ] What is React & SPA
 - [ ] Vite setup
 - [ ] JSX, Components
@@ -55,7 +48,7 @@
 - [ ] useState Hook
 ---
 
-## Week 6: React Router + Forms
+## React Router + Forms
 - [ ] React Router DOM
 - [ ] Conditional Rendering
 - [ ] Lists & Keys
@@ -64,7 +57,7 @@
 ---
 
 # Backend Development
-## Week 7: Node.js
+## Node.js
 - [ ] What is a server?
 - [ ] Installing Node.js
 - [ ] Creating basic HTTP server
@@ -72,7 +65,7 @@
 - [ ] NPM & Custom Modules
 ---
 
-## Week 8: Express.js
+## Express.js
 - [ ] Intro to Express
 - [ ] Creating Routes (GET, POST, PUT, DELETE)
 - [ ] Middleware & Body Parsing
@@ -81,7 +74,7 @@
 ---
 
 # Database
-## Week 9: MongoDB + Authentication
+## MongoDB + Authentication
 - [ ] What is a database? SQL vs NoSQL
 - [ ] MongoDB Atlas Setup
 - [ ] Mongoose Schemas and Models
@@ -89,7 +82,7 @@
 - [ ] Authentication with bcrypt & JWT
 ---
 
-## Week 10: Full Stack Integration
+## Full Stack Integration
 - [ ] Connect React frontend with Express backend
 - [ ] Fetching API in React
 - [ ] Token Handling & Protected Routes
@@ -98,14 +91,14 @@
 ---
 
 # Project
-## Week 11: Full Stack Project (Development)
+## Full Stack Project (Development)
 - [ ] Day 1–2: Build React frontend
 - [ ] Day 3–4: Build Express + MongoDB backend
 - [ ] Day 5: Connect both & implement auth
 ---
 
 # Deployment
-## Week 12: Deployment & Wrap-up
+## Deployment & Wrap-up
 - [ ] Deploy frontend on Vercel/Netlify
 - [ ] Deploy backend (Render/Vercel)
 - [ ] MongoDB Atlas for production
