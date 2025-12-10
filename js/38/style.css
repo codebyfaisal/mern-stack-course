@@ -1,0 +1,8 @@
+.card {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.card.sale {
+  background-color: wheat;
+}
