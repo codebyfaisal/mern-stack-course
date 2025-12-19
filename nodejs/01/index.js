@@ -21,15 +21,15 @@ const fs = require('fs');
 //     console.log('The file has been saved!');
 // })
 
-// fs.copyFile('./test.txt', './copy/test.txt', (err) => {
+// fs.copyFile('./README.md', './copy-test.txt', (err) => {
 //     if (err) throw err;
 //     console.log('The file has been copied!');
 // })
 
-// fs.unlink('./test.txt', (err) => {
+// fs.unlink('./copy-test.txt', (err) => {
 //     if (err) throw err;
 //     console.log('The file has been deleted!');
-// } )
+// })
 
 // fs.existsSync('./test.txt') && fs.unlink('./test.txt', (err) => {
 //     if (err) throw err;
