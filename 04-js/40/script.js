@@ -41,3 +41,18 @@
 // }, 5000)
 
 // console.log("after settimeout")
+
+const td = new Date(2025, 12,21)
+console.log(td.getFullYear())
+console.log(td.getMonth())
+console.log(td.getDate())
+console.log(td.getDay())
+// console.log(td.getHours())
+// console.log(td.getMinutes())
+// console.log(td.getSeconds())
+// console.log(td.getMilliseconds())
+// console.log(td.toDateString())
+// console.log(td.toTimeString())
+// console.log(td.toLocaleString())
+// console.log(td.toLocaleDateString())
+// console.log(td.toLocaleTimeString())

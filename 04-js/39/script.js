@@ -11,7 +11,6 @@
 
 // const container = document.getElementById("container")
 
-
 // // for(let i = 0; i < 3; i++) {
 // //     const card = document.createElement("div")
 // // card.setAttribute("class", "card")
