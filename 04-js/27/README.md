@@ -68,3 +68,6 @@ But, after the rise of **Node.js**, JavaScript also became a **programming langu
 
 👉 **In short:**
 **JavaScript = Scripting Language (originally) + Programming Language (today)**
+
+## References
+- [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)

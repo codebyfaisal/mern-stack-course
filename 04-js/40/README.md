@@ -15,8 +15,8 @@ In JavaScript, we use the `Date` object to work with dates and times. It helps u
 
 ```js
 const now = new Date();
-console.log(now); 
-// Tue Dec 23 2025 22:57:13 GMT+0500 (Pakistan Standard Time) 
+console.log(now);
+// Tue Dec 23 2025 22:57:13 GMT+0500 (Pakistan Standard Time)
 ```
 
 - In both browser and node console show date in local time and it is object.
@@ -52,4 +52,6 @@ We can convert dates into readable strings using these methods.
 
 ---
 
-For more details, visit: [MDN Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+## References
+
+- [MDN Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)

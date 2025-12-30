@@ -39,3 +39,5 @@ console.log(document.body.lastChild)
 <!-- convert to aray -->
 const childrens = Array.from(document.body.children)
 console.log(childrens)
+## References
+- [MDN Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)

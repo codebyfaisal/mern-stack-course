@@ -11,10 +11,10 @@ operand1 operator operand2
 ```
 
 Example:
+
 ```
 a + b;
 ```
-
 
 ## Types
 
@@ -38,12 +38,12 @@ In almost all assignment operators, the right side value will be executed first 
 
 Assignment operators include:
 
-* `=`
-* `+=`
-* `-=`
-* `*=`
-* `/=`
-* `%=`
+- `=`
+- `+=`
+- `-=`
+- `*=`
+- `/=`
+- `%=`
   and so on.
 
 ---
@@ -54,11 +54,11 @@ Arithmetic operators are used to perform mathematical operations like addition, 
 
 Arithmetic operators include:
 
-* `+`
-* `-`
-* `*`
-* `/`
-* `%`
+- `+`
+- `-`
+- `*`
+- `/`
+- `%`
 
 ```js
 let a = 3;
@@ -74,28 +74,29 @@ let g = a % b; // 3
 ---
 
 ## Comparison Operators
+
 Comparison operators are used to compare values.
 
 Comparison operators include:
 
-* `==` 
-* `===` 
-* `!=`
-* `>`
-* `<`
-* `>=`
-* `<=`
+- `==`
+- `===`
+- `!=`
+- `>`
+- `<`
+- `>=`
+- `<=`
 
 ```js
 let a = 3;
 let b = 5;
 
-let c = a == b;  // false
-let d = a != b;  // true
-let e = a > b;   // false
-let f = a < b;   // true
-let g = a >= b;  // false
-let h = a <= b;  // true
+let c = a == b; // false
+let d = a != b; // true
+let e = a > b; // false
+let f = a < b; // true
+let g = a >= b; // false
+let h = a <= b; // true
 ```
 
 > `!=` checks if **a** is not **equal** to **b**
@@ -119,10 +120,10 @@ AND returns **true** only if **all** operands are true.
 Otherwise, the result is false.
 
 ```
-true  && true  ==> true  
-true  && false ==> false  
-false && true  ==> false  
-false && false ==> false  
+true  && true  ==> true
+true  && false ==> false
+false && true  ==> false
+false && false ==> false
 ```
 
 ```js
@@ -149,10 +150,10 @@ OR returns **true** if **at least one** operand is true.
 If all are false, the result is false.
 
 ```
-true  || true  ==> true  
-true  || false ==> true  
-false || true  ==> true  
-false || false ==> false  
+true  || true  ==> true
+true  || false ==> true
+false || true  ==> true
+false || false ==> false
 ```
 
 ```js
@@ -178,8 +179,8 @@ let d = a || b || c; // true
 NOT is used to reverse the boolean value.
 
 ```
-!true  ==> false  
-!false ==> true  
+!true  ==> false
+!false ==> true
 ```
 
 ```js
@@ -261,5 +262,6 @@ let b = a++;
 console.log(b); // 3
 ```
 
-> for more details, see [this](https://www.w3schools.com/js/js_operators.asp)
-> for more details, see [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+## References
+
+- [MDN Expressions and Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)

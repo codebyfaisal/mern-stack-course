@@ -95,3 +95,5 @@ DOM falls under the broader **BOM (Browser Object Model)**, which represents the
 | `lastElementChild`       | Last child       |
 | `nextElementSibling`     | Next sibling     |
 | `previousElementSibling` | Previous sibling |
+## References
+- [MDN DOM Introduction](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)

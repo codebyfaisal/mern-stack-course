@@ -1,5 +1,6 @@
 # Arrays
-Collections of **elements** / **values** stored in a single variable. 
+
+Collections of **elements** / **values** stored in a single variable.
 
 - In JavaScript, an array can hold different data types.
 
@@ -20,10 +21,11 @@ let arrayName = [value1, value2, value3];
 ```js
 let colors = ["red", "green", "blue"];
 let numbers = [1, 2, 3, 4, 5];
-let mixed = ["red", 1, "green", 2, "blue", {a: 1, b: 2}];
+let mixed = ["red", 1, "green", 2, "blue", { a: 1, b: 2 }];
 ```
 
 ## Array Indices
+
 Elements in array stored in linear order.
 Each element in an array has an **index number**, starting from **0**.
 
@@ -90,7 +92,7 @@ console.log(a.concat(b)); // [1, 2, 3, 4]
 
 ```js
 let nums = [1, 2, 3];
-let doubled = nums.map(n => n * 2);
+let doubled = nums.map((n) => n * 2);
 console.log(doubled); // [2, 4, 6]
 ```
 
@@ -98,7 +100,7 @@ console.log(doubled); // [2, 4, 6]
 
 ```js
 let nums = [1, 2, 3, 4];
-let even = nums.filter(n => n % 2 === 0);
+let even = nums.filter((n) => n % 2 === 0);
 console.log(even); // [2, 4]
 ```
 
@@ -110,7 +112,7 @@ console.log(even); // [2, 4]
 
 ```js
 let colors = ["red", "green", "blue"];
-console.log(colors.find(c => c === "green")); // "green"
+console.log(colors.find((c) => c === "green")); // "green"
 ```
 
 ### **includes()** – Checks if an element exists in the array.
@@ -126,7 +128,7 @@ console.log(["a", "b"].includes("a")); // true
 ### **forEach()** – Loops through each element in the array.
 
 ```js
-["a", "b", "c"].forEach(x => console.log(x));
+["a", "b", "c"].forEach((x) => console.log(x));
 ```
 
 ### **reduce()** – Reduces the array to a single value.
@@ -159,8 +161,11 @@ console.log(colors); // ["blue", "green", "red"]
 let colors = ["red", "green"];
 console.log(colors.join("-")); // "red-green"
 ```
+
 ---
 
-For more info or methods visit: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+## References
+
+- [MDN Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ---

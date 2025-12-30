@@ -72,6 +72,7 @@ There are three ways to add events to elements.
 3. Using `addEventListener` method in JavaScript
 
 ### Inline JavaScript
+
 ```html
 <body>
   <button onclick="console.log('Button Clicked!')">Click Me</button>
@@ -79,19 +80,23 @@ There are three ways to add events to elements.
 ```
 
 ### In JavaScript as targeted element attribute
+
 ```js
 const btn = document.getElementById("btn");
 btn.onclick = () => console.log("Button Clicked!");
 ```
 
 ### In JavaScript using addEventListener method
+
 - This is mostly used method in modern JavaScript
 - But in react like framework we use Inline JavaScript directly in HTML.
 - There is one Advantage of using addEventListener method that is we can add multiple listeners.
+
 ```js
 const btn = document.getElementById("btn");
 btn.addEventListener("click", () => console.log("Button Clicked!"));
 ```
+
 ```js
 btn.addEventListener("click", () => console.log("Button Clicked!"));
 btn.addEventListener("click", () => console.log("Button Clicked Again!"));
@@ -105,6 +110,7 @@ We use `addEventListener` to attach events to elements. This is better than usin
 | `removeEventListener()` | Remove an event listener. |
 
 - We can remove event listener by storing function in variable.
+
 ```js
 const ftn = () => console.log("Button Clicked!");
 
@@ -114,4 +120,6 @@ btn.removeEventListener("click", ftn);
 
 ---
 
-For more info, visit: [MDN Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+## References
+
+- [MDN Events](https://developer.mozilla.org/en-US/docs/Web/Events)

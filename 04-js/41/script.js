@@ -88,10 +88,11 @@ const btn = document.getElementById('btn')
 //     btn.removeEventListener('click', dataInServer)
 // }, 5000);
 
-btn.addEventListener('mouseover', () => {
-    console.log("Mouse over")
-    document.body.style.background = "#ccc"
-})
+// * --- Mouse Events ---
+// btn.addEventListener('mouseover', () => {
+//     console.log("Mouse over")
+//     document.body.style.background = "#ccc"
+// })
 
 // btn.addEventListener('mouseout', () => {
 //     console.log("Mouse out")
@@ -115,11 +116,51 @@ btn.addEventListener('mouseover', () => {
 //   console.log("Mouse is moving")
 // })
 
+// * --- Input Events ---
 // document.getElementById('input')
 //     .addEventListener('input', (e) => {
+//         console.dir(e.target)
 //         console.log(e.target.value)
 //     })
 // document.getElementById('input1')
 //     .addEventListener('change', (e) => {
 //         console.log(e.target.value)
 //     })
+
+// * --- Form Handling ---
+// document.querySelector('form')
+//     .addEventListener('submit', (e) => {
+//         e.preventDefault()
+//         // console.dir(e.target.elements.email.value)
+//         // console.dir(e.target.elements.password.value)
+//         const span = document.querySelector('span')
+
+//         const email = e.target.elements.email.value
+//         const password = e.target.elements.password.value
+
+//         if (email === "") span.innerText = "Email are required"
+
+//     })
+
+// document.querySelector('button')
+//     .addEventListener('click', (e) => {
+//         e.preventDefault()
+//         // console.dir(e.target.elements.email.value)
+//         // console.dir(e.target.elements.password.value)
+//         // const span = document.querySelector('span')
+
+//         // const email = e.target.elements.email.value
+//         // const password = e.target.elements.password.value
+
+//         // if (email === "") span.innerText = "Email are required"
+
+//         console.log(document.getElementById('email').value)
+
+//     })
+
+// document.querySelectorAll('.box').forEach((box) => {
+//     box.addEventListener('click', (e) => {
+//         e.stopPropagation();
+//         console.log("click", e.target.className)
+//     })
+// })

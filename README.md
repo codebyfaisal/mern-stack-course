@@ -24,7 +24,7 @@ We use the MERN stack, which stands for:
 - **R**eact.js: A library for building user interfaces.
 - **N**ode.js: A JavaScript runtime built on Chrome's V8 engine.
 
-## 📂 Project Structure
+## 📂 Repository Structure
 
 You'll find folders numbered logically (e.g., `01-html`, `02-css`, `05-reactjs`) so you can jump exactly to where you need to be.
 

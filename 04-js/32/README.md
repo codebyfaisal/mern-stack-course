@@ -119,3 +119,5 @@ console.log(a); // Accessing global variable
 ```
 
 > Accessing local variable that is inside the function is not allowed to use outside the function or also say **local variable is not exist outside the function**
+## References
+- [MDN Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)

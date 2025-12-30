@@ -133,3 +133,6 @@ for (let value of array) {
 | Accesses elements using the **index**        | Accesses elements using the **value**          |
 | Allows us to access elements by index        | Goes through all values of an iterable object  |
 | We know exactly which index we are accessing | We don't know the index of the current element |
+
+## References
+- [MDN Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)

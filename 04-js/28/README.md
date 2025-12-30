@@ -249,3 +249,5 @@ let obj = {
 ```
 
 If we see that we store multiple values of different data types in one container, it is called **object**.
+## References
+- [MDN Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)

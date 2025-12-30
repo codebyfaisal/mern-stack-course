@@ -69,3 +69,5 @@ const sum = (...args) => {
 console.log(sum(1, 2, 3)); // Output: 6
 ```
 ---
+## References
+- [MDN Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
