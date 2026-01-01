@@ -76,3 +76,30 @@
 // }
 
 // ftn()
+
+// fetch('https://fakestoreapi.com/products')
+//     .then((res) => res.json())
+//     .then((res) => console.log(res))
+//     .catch((error) => console.log(error.code))
+
+// try {
+//     const url = 'hello'
+//     const protocol = url.split('//')[0]
+//     const serverAddress = url.split('/')[2]
+//     const route = url.split('/')[3]
+
+
+//     const t = 't' * 45
+//     if (isNaN(t)) throw Error("This is not valid math logic")
+
+//     if (protocol !== 'http:' && protocol !== 'https:')
+//         throw Error("We can't pass url")
+
+//     console.log({
+//         protocol,
+//         serverAddress,
+//         route
+//     })
+// } catch (error) {
+//     console.log('error from error block', error)
+// }

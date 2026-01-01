@@ -145,17 +145,16 @@ const btn = document.getElementById('btn')
 // document.querySelector('button')
 //     .addEventListener('click', (e) => {
 //         e.preventDefault()
-//         // console.dir(e.target.elements.email.value)
-//         // console.dir(e.target.elements.password.value)
-//         // const span = document.querySelector('span')
+// console.dir(e.target.elements.email.value)
+// console.dir(e.target.elements.password.value)
+// const span = document.querySelector('span')
 
-//         // const email = e.target.elements.email.value
-//         // const password = e.target.elements.password.value
+// const email = e.target.elements.email.value
+// const password = e.target.elements.password.value
 
-//         // if (email === "") span.innerText = "Email are required"
+// if (email === "") span.innerText = "Email are required"
 
 //         console.log(document.getElementById('email').value)
-
 //     })
 
 // document.querySelectorAll('.box').forEach((box) => {
@@ -164,3 +163,4 @@ const btn = document.getElementById('btn')
 //         console.log("click", e.target.className)
 //     })
 // })
+
