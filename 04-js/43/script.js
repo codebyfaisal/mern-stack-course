@@ -1,4 +1,5 @@
-import { add } from './main.js'
+// import { add } from './functions.js'
+const add = require('./functions.js')
 
 document.addEventListener('DOMContentLoaded',
     () => document.body.classList.toggle(
