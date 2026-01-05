@@ -37,9 +37,6 @@ yarn-error.log*
 *.sln
 *.sw?
 
-# To ignore 
-*.toignore
-*toignore.md
-*ignore
+
 
 projects

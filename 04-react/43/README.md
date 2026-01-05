@@ -1,6 +1,7 @@
 # React
 
-React is a JavaScript library for building user interfaces (UI). It is developed and maintained by Facebook (Meta).
+React is a JavaScript library for building user interfaces (UI). It is developed and maintained by Facebook (Meta). 
+- Where we use HTML inside JavaScript in one file (.JSX).
 
 - **Library**: It gives you tools to build UI, but you control the structure.
 - **Component-Based**: We build small, reusable parts (components) and combine them to make a website.

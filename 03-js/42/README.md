@@ -177,10 +177,19 @@ Vite is a build tool that helps us create and run projects very quickly.
 
 ### How to use?
 
-The below command will create a new vite project.
-
+The below command will create a new vite project with some default files after which you can update to your requirements.
 ```bash
 npm create vite@latest
+```
+
+After creating the project, you can run the below command to start the server just like LiveServer vs code extension.
+```bash
+npm run dev
+```
+
+If you want to build the project for production, you can run the below command. This function will create a production ready build in the `dist` folder in which most files will be minified and compressed mean it will reduce the size of the files by removing unnecessary characters and spaces.
+```bash
+npm run build
 ```
 
 ### MDN References
