@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
+import { Button } from './components/Button'
+import Card from './components/Card'
 
+// * === === useState Code === ===
 // function App() {
 //   let [counter, setCounter] = useState(0)
 
@@ -42,12 +45,62 @@ import React, { useState } from 'react'
 //   </div>
 // }
 
+// * --- Tailwind CSS ---
 function App() {
   return (
     <div>
       <h1 className="text-3xl font-bold underline animate-pulse">
         Hello world!
       </h1>
+
+      {/* === === Buttons Code === === */}
+
+      {/* <button className='p-2 ring ring-blue-500 rounded-lg'>
+        Clicked
+      </button>
+      <button className='p-2 ring ring-blue-500 rounded-lg'>
+        Clicked
+      </button>
+      <button className='p-2 ring ring-blue-500 rounded-lg'>
+        Clicked
+      </button> */}
+
+      <Button
+        value={"Click"}
+        uiType={"secondary"}
+        onClick={() => { alert("Clicked") }}
+      />
+      {/* Button({value:"Click", uiType:"primary"}) */}
+      <Button value={"Go back"} onClick={() => { alert("Clicked on 2nd") }} />
+      <Button value={"Go Home"} />
+      {/* <Button />
+      <Button />
+      <Button />
+      <Button /> */}
+
+      {/* === === Cards Code === === */}
+      <div className="grid grid-cols-4 gap-2 px-4">
+        <Card
+          src={"https://plus.unsplash.com/premium_photo-1736816227895-e0653ceb1f0e?q=80&w=775"}
+          title={"Amazon Product"}
+          desc={"This is card description"}
+        />
+        <Card
+          src={"https://plus.unsplash.com/premium_photo-1736816227895-e0653ceb1f0e?q=80&w=775"}
+          title={"Amazon Product"}
+          desc={"This is card description"}
+        />
+        <Card
+          src={"https://plus.unsplash.com/premium_photo-1736816227895-e0653ceb1f0e?q=80&w=775"}
+          title={"Amazon Product"}
+          desc={"This is card description"}
+        />
+        <Card
+          src={"https://plus.unsplash.com/premium_photo-1736816227895-e0653ceb1f0e?q=80&w=775"}
+          title={"Amazon Product"}
+          desc={"This is card description"}
+        />
+      </div>
     </div>
   )
 }

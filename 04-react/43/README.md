@@ -11,10 +11,12 @@ React is a JavaScript library for building user interfaces (UI). It is developed
 
 There are several reasons why React is so popular and widely used:
 
-1.  **Fast & Performance**: React uses a **Virtual DOM** to update only the parts of the page that change, making it faster than traditional updates.
-2.  **Reusable Components**: You can write a component (like a Button) once and use it everywhere. This saves time and code.
-3.  **Large Ecosystem**: There are thousands of libraries and tools available for React (like React Router, Redux).
-4.  **Community Support**: Since it's maintained by Meta and used by millions, finding help is easy.
+1. **useState**: React uses useState for variables which make easy to change one variable value and show across the app.
+2.  **Reusable Components**: You can split your app into small components and reuse it or create a components (like a Button) once and use it everywhere. This saves time and code.
+3.  **Fast & Performance**: React uses a **Virtual DOM** to update only the parts of the page that change, making it faster than traditional updates instead of DOM manipulation.
+4. **Debugging** debugging is very easy due to component base code.
+4.  **Large Ecosystem**: There are thousands of libraries and tools available for React (like React Router, Redux).
+5.  **Community Support**: Since it's maintained by Meta and used by millions, finding help is easy.
 
 # What, it will have?
 
