@@ -70,6 +70,8 @@ In React, normal variables don’t automatically update the UI when their value 
 To fix this, we use **State**. State is a "magic variable" that tells React:
 **"Hey! My value has changed. Please update the UI!"** React will automatically re-render the UI wherever the state is used.
 
+- useState is one the react hooks.
+
 ### Syntax
 
 ```js
