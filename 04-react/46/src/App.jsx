@@ -1,28 +1,39 @@
-  import React, { useEffect, useState } from 'react'
-  import { products } from './db/products.js'
-  import Card from "./components/Card"
+import React, { useEffect, useState, useRef } from 'react'
+import { products } from './db/products.js'
+import Card from "./components/Card"
+import Table from "./components/Table.jsx"
+import Form from './components/Form.jsx'
 
-  function App() {
-    const [light, setLight] = useState(true)
+function App() {
+  const [light, setLight] = useState(() => {
+    return localStorage.getItem('theme') !== 'dark'
+  })
 
-    useEffect(() => {
-      document.body.className = localStorage.getItem('theme')
-      localStorage.setItem('theme', !light && "dark")
-    }, [light])
+  useEffect(() => {
+    const theme = light ? 'light' : 'dark'
+    document.body.className = theme
+    localStorage.setItem('theme', theme)
+  }, [light])
 
-    return (
-      <>
+  return (
+    <>
+      {/* <h1>Products</h1> */}
 
-        <h1>Products</h1>
-        <button
-          type='button'
-          onClick={() => setLight(!light)}
-        >
-          {light ? "Light" : "Dark"}
-        </button>
-        <Card cards={products} />
-      </>
-    )
-  }
+      {/* <button
+        type="button"
+        onClick={() => setLight(prev => !prev)}
+      >
+        {light ? "Light" : "Dark"}
+      </button> */}
 
-  export default App
+      {/* <Card cards={products} />  */}
+
+      {/* <Table data={products} /> */}
+
+      <Form />
+
+    </>
+  )
+}
+
+export default App

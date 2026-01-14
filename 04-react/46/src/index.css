@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .cards {
   display: flex;
   justify-content: space-between;
@@ -34,4 +36,8 @@ img {
 body.dark {
     background-color: black;
     color: white;
+}
+
+input,textarea,select {
+  @apply ring ring-indigo-300 p-2 hover:ring-black
 }
