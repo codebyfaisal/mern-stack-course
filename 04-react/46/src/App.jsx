@@ -1,19 +1,19 @@
-import React, { useEffect, useState, useRef } from 'react'
-import { products } from './db/products.js'
-import Card from "./components/Card"
-import Table from "./components/Table.jsx"
-import Form from './components/Form.jsx'
+import React, { useEffect, useState } from "react";
+import { products } from "./db/products.js";
+import Card from "./components/Card";
+import Table from "./components/Table.jsx";
+import Form from "./components/Form.jsx";
 
 function App() {
   const [light, setLight] = useState(() => {
-    return localStorage.getItem('theme') !== 'dark'
-  })
+    return localStorage.getItem("theme") !== "dark";
+  });
 
   useEffect(() => {
-    const theme = light ? 'light' : 'dark'
-    document.body.className = theme
-    localStorage.setItem('theme', theme)
-  }, [light])
+    const theme = light ? "light" : "dark";
+    document.body.className = theme;
+    localStorage.setItem("theme", theme);
+  }, [light]);
 
   return (
     <>
@@ -31,9 +31,8 @@ function App() {
       {/* <Table data={products} /> */}
 
       <Form />
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;

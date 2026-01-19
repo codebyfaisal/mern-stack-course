@@ -1,16 +1,65 @@
-# React + Vite
+# Form Handling
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Controlled Components
 
-Currently, two official plugins are available:
+In react, input elements like `<input>` and `<textarea>` or almost all form fields maintain their own state mean as we write it storing and showing but we can control it using react state which also called controlled components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Example
 
-## React Compiler
+```jsx
+const [email, setEmail] = useState("");
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<input
+    type="email"
+    placeholder="Enter your email"
+    value={value}
+    onChange={() => setEmail()}
+>
+```
 
-## Expanding the ESLint configuration
+- **value**: the current value of the input.
+- **setValue**: function to update the value when user types.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## List Rendering
+
+To render multiple items that store in a array or you may say a list we use `map()` method to render list of items.
+
+### Example
+
+```jsx
+const fruits = ["apple", "banana", "orange"];
+
+return (
+  <ul>
+    {fruits.map((fruit) => (
+      <li key={fruit}>{fruit}</li>
+    ))}
+  </ul>
+);
+```
+> it is not just for ul, as you can use it for div's, table or other elements as well
+
+## Conditional Rendering
+
+Many times we need to show the item on some condition or perform some rendring based on some condition, so we can use logical `&&` operator or ternary operator `? :` to show or hide elements based on condition.
+
+### Example
+
+```jsx
+// using ternary
+{
+  isLoggedIn ? <button>Logout</button> : <button>Login</button>;
+}
+
+// using logical &&
+{
+  isAdmin && <button>Delete</button>;
+}
+```
+
+# docs references
+
+- [react forms](https://react.dev/reference/react-dom/components/input)
+- [useEffect](https://react.dev/reference/react/useEffect)
+- [rendering lists](https://react.dev/learn/rendering-lists)
+- [conditional rendering](https://react.dev/learn/conditional-rendering)
