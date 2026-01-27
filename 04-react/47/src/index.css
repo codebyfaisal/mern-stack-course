@@ -1,10 +1,31 @@
-nav {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  background-color: #f0f0f0;
+  height: 100vh;
   gap: 1rem;
 }
 
-footer {
-  text-align: center;
+.home {
+  background-color: #f0ffe0;
+  padding: 4vh;
+}
+
+.card {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
 }

@@ -3,12 +3,13 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 
-import { CounterProvider } from "./context/CounterContext.jsx";
+import { BrowserRouter } from "react-router-dom";
+// import { CounterProvider } from "./context/Counter.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <CounterProvider>
+    <BrowserRouter>
       <App />
-    </CounterProvider>
+    </BrowserRouter>
   </StrictMode>,
 );

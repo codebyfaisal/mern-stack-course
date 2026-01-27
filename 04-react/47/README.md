@@ -1,121 +1,110 @@
-# React Router
+# Context API
 
-One of React major feature is SPA(Single Page Application). Where we can create multiple page appllication but without reloading the website, and for this functionality we need React router, is a library/package for routing in react apps. it allows us to navigate between pages without reloading the browser.
+As of now, we know that passing props to a component is simple and easy for **small applications**.
+But when your app **grows bigger**, and especially when components have a **deep hierarchy**, passing props becomes a **headache**. This problem is known as **props drilling**.
 
-### Installation
+## The Problem (Props Drilling)
 
-```bash
-npm install react-router-dom
+Let’s understand the problem with an example.
+
+Assume we have a **counter value** that is stored in `App.jsx`, and this value is required in multiple components.
+
+![React App Tree](./public/figure-1.png)
+
+From the diagram above 👆
+
+- `App.jsx` contains the **counter**
+- `LogForm` component needs the counter value
+- But `Header`, `Hero`, and `Footer` **do not need** the counter
+
+Still, to reach `LogForm`, we must pass the counter like this:
+
+```
+App.jsx → Hero.jsx → LogForm.jsx
 ```
 
-### Setup
+Here:
 
-Wrap <App/> with `BrowserRouter` in `main.jsx` to pass full app as children to react router.
+- `Hero.jsx` is **holding the counter only to pass it forward**
+- This makes code messy and hard to maintain
+
+This is where **Context API** comes into the picture.
+
+## What is Context API?
+
+Context API allows us to create a **global store** that can be accessed by **any component** directly, without passing props manually at every level.
+
+So instead of passing the counter through multiple components:
+
+- We store it in **Context**
+- Any component that needs it can directly access it
+
+![React App Tree](./public/figure-2.png)
+
+## How to Create Context API Store?
+
+### 1. Create Context
+
+First, we create a context using `createContext`.
 
 ```jsx
-import { BrowserRouter } from "react-router-dom";
+import { createContext } from "react";
 
-<BrowserRouter>
-  <App />
-</BrowserRouter>;
+export const CounterContext = createContext();
 ```
 
-## Routes
+### 2. Provider
 
-`Routes` and `Route` components to define our pages and implement routing.
-
-- Routes: it is a wrapper component that holds all the routes.
-- Route: it is a component that defines a route.
-
-### Example
+`Provider` is used to wrap the components that need access to the shared data.
+It provides the global data to all child components.
 
 ```jsx
-  <Route path="/" element={<Home />} />
-  <Route path="/about" element={<About />} />
-  <Route path="/contact" element={<Contact />} />
-  <Route path="*" element={<NotFound />} />
-</Routes>
+import { CounterContext } from "./CounterContext";
+import { useState } from "react";
+
+function App() {
+  const [counter, setCounter] = useState(0);
+
+  return (
+    <CounterContext.Provider value={{ counter, setCounter }}>
+      <Hero />
+    </CounterContext.Provider>
+  );
+}
+
+export default App;
 ```
 
-## Navigation / Link
+Now:
 
-In pure html we using <a href=""></a> which help to navigate to another pag.e but reload the tha tab/page, so know if using a tag will work in react router dom but the problem is that it will reloading the page and here is we have <Link to=""></Link> element which help to navigate between pages without reloading the website.
+- `Hero`, `LogForm`, and all child components can access `counter`
+- No unnecessary prop passing
 
-### Example
+### 3. useContext Hook
+
+To read or update the context data, we use the `useContext` hook.
 
 ```jsx
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CounterContext } from "./CounterContext";
 
-function Home() {
+function LogForm() {
+  const { counter, setCounter } = useContext(CounterContext);
+
   return (
     <>
-      {/* use it in html */}
-      <Link to="/about">go to about</Link>
+      <h2>Counter Value: {counter}</h2>
+      <button onClick={() => setCounter(counter + 1)}>Increment</button>
     </>
   );
 }
+
+export default LogForm;
 ```
 
-Similarly we can also use `useNavigate` programatically to navigate beween pages without page reloading.
+Now `LogForm` can directly access the counter without depending on `Hero`.
 
-### Example
+# Docs references
 
-```jsx
-import { useNavigate } from "react-router-dom";
-
-function ButtonLink() {
-    const navigate = useNavigate()
-
-    return (
-        <button onClick={()=>navigate("/about")}>go to about page</Link>
-     );
-}
-```
-
-## Dynamic Routing
-
-Sometimes we need a dynamic data page where it fetch the data based on url, like if we have many products and want to open detailPage for one product. We can't create millions of routes for millions of products. So we use dynamic segments.
-
-### Example
-
-```jsx
-// inside Routes
-<Route path="/products/:id" element={<ProductDetail />} />
-
-{/* we can name what we wantbut in syntax of /:variableName*/}
-```
-
-### **useParams**
-
-To get that `:id` inside the `ProductDetail` component, we use `useParams` hook. It return object with that dynamic value.
-
-### Example
-
-```jsx
-import { useParams } from "react-router-dom";
-
-const ProductDetail = () => {
-  const { id } = useParams();
-  return <h1>Product Id is: {id}</h1>;
-};
-```
-
-### **useSearchParams**
-
-Just like in google search we see `?q=something` in url. That is search params (Query strings). To read or update them we use `useSearchParams`. It works like `useState`.
-
-### Example
-
-```jsx
-import { useSearchParams } from "react-router-dom";
-
-const [searchParams, setSearchParams] = useSearchParams();
-
-const name = searchParams.get("name");
-```
-
-# docs references
-
-- [react router docs](https://reactrouter.com/en/main)
-- [useParams](https://reactrouter.com/en/main/hooks/use-params)
-- [useNavigate](https://reactrouter.com/en/main/hooks/use-navigate)
+- [context api](https://react.dev/reference/react/createContext)
+- [useContext](https://react.dev/reference/react/useContext)

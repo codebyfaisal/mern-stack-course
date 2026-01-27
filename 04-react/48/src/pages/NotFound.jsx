@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Notfound = () => {
+const NotFound = () => {
   return (
     <div>
-      Notfound
+      NotFound
       <br />
       <Link to="/products">Go back</Link>
     </div>
   );
 };
 
-export default Notfound;
+export default NotFound;

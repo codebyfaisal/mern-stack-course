@@ -1,38 +1,16 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Button from "./components/Button";
-
-import { Routes, Route } from "react-router-dom";
-import {
-  Home,
-  About,
-  Services,
-  Contact,
-  Products,
-  Notfound,
-  ProductDetail,
-} from "./pages";
+// import { Routes, Route } from "react-router-dom";
+import { useContext } from "react";
+import Home from "./components/Home";
+import { CounterContext } from "./context/CounterContext";
 
 function App() {
+  const { count, setCount } = useContext(CounterContext);
   return (
-    <>
-      <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetail />} />
-        {/* <Route path="/products/:id/:name" element={<ProductDetail />} /> */}
-
-        <Route path="/*" element={<Notfound />} />
-      </Routes>
-
-      <hr />
-      <Footer />
-    </>
+    <div className="app">
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <Home />
+    </div>
   );
 }
 

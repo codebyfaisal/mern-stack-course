@@ -4,6 +4,6 @@ import Services from "./Services";
 import About from "./About";
 import Products from "./Products";
 import ProductDetail from "./ProductDetail";
-import Notfound from "./Notfound";
+import NotFound from "./NotFound";
 
-export { Home, Contact, Services, About, Products, Notfound, ProductDetail };
+export { Home, Contact, Services, About, Products, NotFound, ProductDetail };
