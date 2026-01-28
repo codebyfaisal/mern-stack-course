@@ -1,38 +1,33 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
+import Home from "./pages/Home";
 
-const App = () => {
-  // let data = null;
-  const [data, setData] = useState(null);
+import { Routes, Route, Link } from "react-router";
+import Shorts from "./pages/Shorts";
+import ShortDetail from "./pages/ShortDetail";
+import Account from "./pages/Account";
+import Navbar from "./components/Navbar";
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await axios.get(
-        "https://jsonplaceholder.typicode.com/todos",
-      );
-      // data = response.data;
-      // console.log(data);
-      setData(response.data);
-    };
+const shorts = ["4rf56rd", "32dx34", "3ds32"];
 
-    fetchData();
-  }, []);
+// .com/shorts/4rf56rd
 
-  console.log(data);
-
-  if (!data) return <i>Loading</i>;
-
+function App() {
   return (
-    <main>
-      <h2>App</h2>
-      {data &&
-        data.map((todo) => (
-          <div key={todo.id} className="todo">
-            Title: {todo.title}
-          </div>
-        ))}
-    </main>
+    <div className="app">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shorts" element={<Shorts />} />
+        <Route path={"/shorts/:id"} element={<ShortDetail />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/*" element={<h1>Not Found</h1>} />
+      </Routes>
+
+      <footer>
+        <p className="copyright">copyright 2025</p>
+      </footer>
+    </div>
   );
-};
+}
 
 export default App;
