@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require("fs");
 
 // fs.functioname(path, data, callback)
 
@@ -21,7 +21,7 @@ const fs = require('fs');
 //     console.log('The file has been saved!');
 // })
 
-// fs.copyFile('./README.md', './copy-test.txt', (err) => {
+// fs.copyFile('./README.md', './copy-test.js', (err) => {
 //     if (err) throw err;
 //     console.log('The file has been copied!');
 // })
@@ -51,9 +51,14 @@ const fs = require('fs');
 //     console.log('The directory has been created!');
 // })
 
-// fs.rmdir('./test.txt', { recursive: true }, (err) => {
-//     if (err) throw err;
-//     console.log('The directory has been created!');
-// })
+// randomBytes.send to client
 
-console.log("done")
+fs.rmdir("./test", { recursive: true }, (err) => {
+  if (err) throw err;
+  console.log("The directory has been created!");
+});
+
+// fs.writeFile('./test.txt', 'Hello class app keso ho', (err) => {
+//     if (err) throw err;
+//     console.log('The file has been saved!');
+// })

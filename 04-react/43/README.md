@@ -15,8 +15,8 @@ There are several reasons why React is so popular and widely used:
 2.  **Reusable Components**: You can split your app into small components and reuse it or create a components (like a Button) once and use it everywhere. This saves time and code.
 3.  **Fast & Performance**: React uses a **Virtual DOM** to update only the parts of the page that change, making it faster than traditional updates instead of DOM manipulation.
 4. **Debugging** debugging is very easy due to component base code.
-4.  **Large Ecosystem**: There are thousands of libraries and tools available for React (like React Router, Redux).
-5.  **Community Support**: Since it's maintained by Meta and used by millions, finding help is easy.
+5. **Large Ecosystem**: There are thousands of libraries and tools available for React (like React Router, Redux).
+6.  **Community Support**: Since it's maintained by Meta and used by millions, finding help is easy.
 
 # What, it will have?
 

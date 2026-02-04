@@ -17,6 +17,10 @@ const Shorts = () => {
   //   fetchData();
   // }, []);
 
+  // const { data, loading, error } = useFetchData(
+  //   "https://jsonplaceholder.typicode.com/todos",
+  // );
+
   const { data, loading, error } = useFetchData(
     "https://jsonplaceholder.typicode.com/todos",
   );

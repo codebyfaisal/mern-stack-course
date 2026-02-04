@@ -20,9 +20,13 @@ const ShortDetail = () => {
   //     fetchData();
   //   }, []);
 
-  const data = useFetchData("https://jsonplaceholder.typicode.com/todos/" + id);
+  const { data, loading, error } = useFetchData(
+    "https://jsonplaceholder.typicode.com/todos/" + id,
+  );
 
-  if (!data) return <h2>Loading the todo for {id} ...</h2>;
+  if (loading) return <h2>Loading the todo for {id} ...</h2>;
+
+  if (error) return <h2>Error</h2>;
 
   return (
     <div>
